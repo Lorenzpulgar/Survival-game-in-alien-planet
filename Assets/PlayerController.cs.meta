@@ -3,7 +3,12 @@ guid: 47e50b5f1c61ccd4ab73cf83d967f70c
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - bullet: {fileID: 3880604521290398851, guid: da09bbd0a3ba32b408c66f37616633fd, type: 3}
+  - rifleStart: {instanceID: 0}
+  - HpText: {instanceID: 0}
+  - GameOver: {instanceID: 0}
+  - Victory: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
