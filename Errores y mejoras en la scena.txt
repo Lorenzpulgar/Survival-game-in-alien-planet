@@ -1,0 +1,29 @@
+Errores y mejoras en la scena: 
+- Tags de enemys desconfigurado
+- Tag de bullet desconfigurado
+- Bullet no asignado en el player
+- Agregar rigidbody y capsule collider a los npc y la bala para mejorar la física
+- Agregar los boxcollider a los objetos
+
+PlayerController.cs:
+- La linea Destroy(this); hace que el juego no tenga funcionamiento
+- Las bibliotecas UnityEditor y System.Security.Cryptography no se usan en el codigo, son inecesarias. 
+- Inicializar la variable de Health en 100
+- Añadir comentarios para mejorar la lectura del codigo
+- Organizar el Código por funciones
+- Actualizar la UI de Salud en vez de ChangeHealth en el Start
+- Las condiciones de cuando se activa el click derecho no tienen sentido, no hay botiquin y se activa el lost innecesariamente al tocar a los enemigos.
+- Se arregla la condición con el click derecho para que pueda destruir a los enemigos. 
+- Los tags de Heal y Finish son innecesarios y sin sentido porque no hay sprites con estos.
+- Agregar una función para controlar el movimiento y el salto usando el rigidbody.
+
+Bullet.cs:
+- Se agrego un Lifetime para eliminar las balas despues de 10s sin tocar objetos
+- Se agrego los CapsuleCollider de los enemigos se activo el IsTrigger para colisionar correctamente.
+- Agregue la instancia de incrementar el contador cuando mate a un enemigo.
+- Cambiamos la logica del Physics.OverlapSphere por un OnTriggerEnter lo cual simplifica nuestro codigo y corrige errores de collision con el enemigo.
+
+PlayerLook.cs:
+- Hay que agregar la main camara en el playerArms
+- Hay que ajustar el mousesense en 1 o 2
+
